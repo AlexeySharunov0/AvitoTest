@@ -8,13 +8,16 @@ __pycache__/
 # Виртуальное окружение
 venv310/
 venv/
-.env/
 
 # Логи и результаты тестов
 allure-results/
 logs.log
 
 # Системные/временные файлы
+.DS_Store
 *.swp
 *.swo
+
+# Environment
 .env
+EOF
