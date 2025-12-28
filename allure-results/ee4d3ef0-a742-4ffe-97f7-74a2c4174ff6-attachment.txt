@@ -1,0 +1,3 @@
+[32mINFO    [0m UI.base.WebPage:WebPage.py:26 Переходим по ссылке https://avito-tech-internship-psi.vercel.app/
+[32mINFO    [0m UI.base.WebElement:WebElement.py:53 Вводим текст              в элемент <//*[@placeholder='Поиск']>
+[32mINFO    [0m UI.base.WebElement:WebElement.py:67 Проверяем, что элемент <//*[text()='Задачи не найдены']> виден

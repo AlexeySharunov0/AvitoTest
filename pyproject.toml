@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "AvitoInternship"
+version = "2.0"
+description = "Autotest project Avito"
+authors = ["Sharunov Alexey"]
+
+[tool.poetry.dependencies]
+python = "^3.10"  # Смените на 3.10
+allure-pytest = "2.15.2"
+pytest = "8.3.4"  # Последняя стабильная версия
+playwright = "1.40.0"
+python-dotenv = "1.0.0"
+
+[tool.pytest.ini_options]
+addopts = "-v --tb=short"
+playwright = false

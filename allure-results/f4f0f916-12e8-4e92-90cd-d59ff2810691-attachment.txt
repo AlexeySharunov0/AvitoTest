@@ -1,0 +1,4 @@
+[32mINFO    [0m UI.base.WebPage:WebPage.py:26 Переходим по ссылке https://avito-tech-internship-psi.vercel.app/
+[32mINFO    [0m UI.base.WebElement:WebElement.py:53 Вводим текст test_invalid_task_name в элемент <//*[@placeholder='Поиск']>
+[32mINFO    [0m UI.base.WebElement:WebElement.py:190 Проверяем, что все элементы <.MuiTypography-root.MuiTypography-subtitle1.css-12sszql> не видны
+[32mINFO    [0m UI.base.WebElement:WebElement.py:67 Проверяем, что элемент <//*[text()='Задачи не найдены']> виден

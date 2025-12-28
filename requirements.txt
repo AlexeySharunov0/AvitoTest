@@ -1,0 +1,13 @@
+# Основные зависимости
+playwright==1.42.0
+pytest==8.2.0
+pytest-playwright==0.4.1
+requests==2.31.0
+allure-pytest==2.13.5
+python-dotenv==1.0.1
+
+# Генерация данных (используется в Gen)
+Faker==22.2.0
+
+# Дополнительно (если используется в generate.py)
+pytz==2024.1

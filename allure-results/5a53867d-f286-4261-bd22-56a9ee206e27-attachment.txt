@@ -1,0 +1,4 @@
+[32mINFO    [0m UI.base.WebPage:WebPage.py:26 Переходим по ссылке https://avito-tech-internship-psi.vercel.app/
+[32mINFO    [0m UI.base.WebElement:WebElement.py:53 Вводим текст Оптимизация заг в элемент <//*[@placeholder='Поиск']>
+[32mINFO    [0m UI.base.WebElement:WebElement.py:176 Проверяем, что все элементы <.MuiTypography-root.MuiTypography-subtitle1.css-12sszql> видны
+[32mINFO    [0m UI.base.WebElement:WebElement.py:168 Получаем тексты элементов <.MuiTypography-root.MuiTypography-subtitle1.css-12sszql>
