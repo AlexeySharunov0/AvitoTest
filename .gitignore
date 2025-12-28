@@ -17,4 +17,4 @@ logs.log
 # Системные/временные файлы
 .DS_Store
 *.swp
-*.swo
+*.swo.env
