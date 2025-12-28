@@ -1,3 +1,0 @@
-[32mINFO    [0m UI.base.WebPage:WebPage.py:26 Переходим по ссылке https://avito-tech-internship-psi.vercel.app/
-[32mINFO    [0m UI.base.WebElement:WebElement.py:94 Кликаем по элементу <//*[text()='Создать задачу']>
-[32mINFO    [0m UI.base.WebElement:WebElement.py:67 Проверяем, что элемент <.MuiBox-root.css-1epuubg> виден
