@@ -15,6 +15,6 @@ allure-results/
 logs.log
 
 # Системные/временные файлы
-.DS_Store
 *.swp
-*.swo.env
+*.swo
+.env
