@@ -16,7 +16,6 @@ cache:
     - .cache/pip
     - $PLAYWRIGHT_BROWSERS_PATH
 
-# 1. Установка
 install:
   stage: install
   script:
@@ -28,12 +27,9 @@ install:
       - .cache/pip
       - $PLAYWRIGHT_BROWSERS_PATH
 
-# 2. Запуск тестов с Allure
 test:
   stage: test
   script:
-    - |
-      echo "Running tests with Allure annotations..."
       python -m pytest tests/ \
         -v \
         --alluredir=$ALLURE_RESULTS \
@@ -44,20 +40,17 @@ test:
       - $ALLURE_RESULTS
     expire_in: 1 week
 
-# 3. Генерация красивого отчета
 generate-allure:
   stage: deploy
   image: frankescobar/allure-docker-service:latest
   needs: ["test"]
   script:
     - |
-      echo "📊 Generating Allure report..."
       allure generate $ALLURE_RESULTS \
         -o $PAGES_DIR \
         --clean
       
-      # Добавляем кастомизацию
-      echo "🎨 Customizing report..."
+
       cat > $PAGES_DIR/plugins/behaviors/behaviors.json << 'EOF'
       {
         "testResult": {
@@ -74,14 +67,12 @@ generate-allure:
       - $PAGES_DIR
     expire_in: 1 week
 
-# 4. Публикация на GitLab Pages
 pages:
   stage: deploy
   dependencies:
     - generate-allure
   script:
-    - echo "🚀 Deploying to GitLab Pages..."
-    - echo "Report will be available at: https://$CI_PROJECT_NAMESPACE.gitlab.io/$CI_PROJECT_NAME/"
+    ...
   artifacts:
     paths:
       - $PAGES_DIR
